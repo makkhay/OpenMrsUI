@@ -11,8 +11,8 @@
 
 ## Todos Sprint 1 
 
-- [ ] Choose a framework to work on 
-- [ ] Choose a library to display data such as graphs and charts. 
+- [x] Choose a framework to work on 
+- [x] Choose a library to display data such as graphs and charts. 
 - [ ] Provide some type of login system 
 
 
