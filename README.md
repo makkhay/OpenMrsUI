@@ -2,6 +2,12 @@
 - User interface for OpenMrs to show user stats. 
 - Desgined for doctors to log in and see the usage stats
 - Better than the legacy module. 
+### Purpose:
+- Admin will able to view the different users login history based on geography location at specific day, week and month.
+
+
+ 
+
 
 ## Todos Sprint 1 
 
@@ -11,3 +17,11 @@
 
 
 ## Todos Sprint 2 
+- [ ] make a simple time and visits graph by using a static data
+- [ ] Collect data from mysql and display on the graph.
+
+
+
+
+### Delivery:
+- Make an interactive webpage under the administration page using openmrs module and database
