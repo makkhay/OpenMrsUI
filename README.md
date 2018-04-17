@@ -5,7 +5,6 @@
 ### Purpose:
 - Admin will able to view the different users login history based on geography location at specific day, week and month.
 
-
  
 
 
@@ -17,7 +16,7 @@
 
 
 ## Todos Sprint 2 
-- [ ] make a simple time and visits graph by using a static data
+- [x] make a simple time and visits graph by using a static data
 - [ ] Collect data from mysql and display on the graph.
 
 
