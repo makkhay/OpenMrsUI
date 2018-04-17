@@ -10,8 +10,8 @@ import App from './App';
 import NotFound from './NotFound';
 
 
-import DoctorProfile from './members/DoctorsAccount/Profile';
-import DoctorDashboard from './members/DoctorsAccount/Dashboard';
+import DoctorProfile from './DoctorProfile/DoctorsAccount/Profile';
+import DoctorDashboard from './DoctorProfile/DoctorsAccount/Dashboard';
 import DoctorLocked from './portals/LockedPortal'
 
 
@@ -25,7 +25,6 @@ const Routes = (props) => {
 
         <Route path="/doctor/profile" component={DoctorProfile} />
         <Route path="/doctor/dashboard" component={DoctorDashboard} />
-
         <Route path="/doctor/locked" component={DoctorLocked} />
       
       </Switch>
