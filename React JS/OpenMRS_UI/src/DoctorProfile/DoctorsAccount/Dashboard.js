@@ -28,7 +28,7 @@ const barData = [
     { x: 'tues', y: 1 },
     { x: 'wed', y: 4 },
     { x: 'thur', y: 1 },
-    { x: 'fri', y: 5 },
+    { x: 'Fri', y: 5 },
     {x: 'sat',y : 6}
 ];
 
