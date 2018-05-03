@@ -1,0 +1,108 @@
+
+ <!DOCTYPE html>
+ <html>
+    <head>
+ <!-- this one first! -->
+
+ <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        <p id="demo"></p>
+<script type="text/javascript">
+var data = [
+    [1525294039688 , 1],
+    [1525296128905, 2],
+    [1525296428905, 3]
+  ]
+
+   
+console.log("length is :" + data.length);
+
+var count = 0;
+for(var i = 0; i < data.length; ++i){
+    if(data[i] == 2)
+        count++;
+        console.log("loop is :" + data[i]);
+
+}
+
+seresData = []
+data.forEach(function(item) {
+  seresData.push([item[0], item[item.length - 1]])
+})
+//console.log(seresData)
+
+Highcharts.chart('container', {
+  chart: {
+    type: 'area',
+    zoomType: 'x'
+  },
+  title: {
+    text: '# of Logins'
+  },
+  subtitle: {
+    text: 'Demo'
+  },
+  xAxis: {
+    type: 'datetime',
+    dateTimeLabelFormats: { // don't display the dummy year
+      month: '%e. %b',
+      year: '%b'
+    },
+    title: {
+      text: 'Date'
+    }
+  },
+  yAxis: {
+    title: {
+      text: '# of Logins'
+    },
+    min: 0
+  },
+  tooltip: {
+    headerFormat: '<b>{series.name}</b><br>',
+    pointFormat: '{point.x:%e. %b}: {point.y:.2f} m'
+  },
+
+  plotOptions: {
+    spline: {
+      marker: {
+        enabled: true
+      }
+    }
+  },
+
+  series: [{
+    name: 'lol',
+    data: seresData
+  }]
+});
+
+
+ function getTimeStamp(stamp) {
+   
+     var date = new Date(stamp);
+     var datevalues = date.getFullYear()
+         +'-'+ date.getMonth()
+         +'-'+ date.getDate()
+         +' '+ date.getUTCHours()
+         +':'+ date.getMinutes()
+         +':'+ date.getSeconds();   
+         return datevalues; 
+ }
+
+
+document.getElementById("demo").innerHTML = getTimeStamp(1525294039688)
+
+
+
+</script>
+
+</body>
+</html>
+
+
