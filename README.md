@@ -24,3 +24,4 @@
 
 ### Delivery:
 - Make an interactive webpage under the administration page using openmrs module and database
+- make a deliverable to show it to professor 
