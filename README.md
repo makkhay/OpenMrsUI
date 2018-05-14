@@ -18,7 +18,7 @@
 ## Todos Sprint 2 
 - [x] make a simple time and visits graph by using a static data
 - [x] Collect data from mysql and display on the graph.
-- [ ] make a sample dataset 
+- [x] make a sample dataset 
 
 
 
